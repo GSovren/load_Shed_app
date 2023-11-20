@@ -5,9 +5,17 @@ app = Flask(__name__)
 # Store the load shedding data
 # load_shedding_data = []
 
+
+  
+
+
 @app.route('/')
 def index():
     return render_template('login.html')
+
+if __name__ == '__main__': 
+    app.run(host='172.16.3.132') 
+
 
 @app.route('/home', methods=['POST', 'GET'])
 def home():
