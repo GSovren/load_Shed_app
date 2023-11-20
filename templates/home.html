@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <title>Zesa Load Shedding</title>
+</head>
+<body>
+    <!--Landing Page start-->
+        <div class="landing-page">
+
+            <div class="home-form">
+                <div class="logo-container">
+                    <div class="logo">
+                        <img src="{{ url_for('static', filename='images/website-logo2.png')}}" alt="">
+                    </div>
+        
+                    <div class="logo-statement">
+                        <h1>ZETDC LOAD SHEDDING INTERFACE</h1>
+                        <h1>ZETDC LOAD SHEDDING INTERFACE</h1>
+                        <h1>ZETDC LOAD SHEDDING INTERFACE</h1>
+                        <h1>ZETDC LOAD SHEDDING INTERFACE</h1>
+                    </div>
+                </div>
+                
+                <div class="form-container">
+                    <div class="login-label">
+                        <i class="ri-survey-fill"></i>&nbsp;Load Shedding Data
+                    </div>
+                    <form action="/home" method="post">
+                        <div class="form-inner-container">
+                            <div class="form-container-left">
+                                <div class="linput">
+                                    <label for="sub_trans">SUBTRANS LOAD:</label><br>
+                                    <input type="text" id="sub_trans" name="sub_trans" placeholder="Sub Trans"><br><br>
+                                </div>
+                
+                                <div class="linput">
+                                    <label for="shed_megawatts">SHED MEGAWATS:</label><br>
+                                    <input type="number" id="shed_megawatts" name="shed_megawatts" placeholder="megawatts"><br><br>
+                                </div>
+                                <div class="linput"><label for="restored_time">RESTORED:</label><br>
+                                    <input type="number" id="restored_time" name="restored_time" placeholder="megawatts"><br><br>
+                                </div> 
+                                <button name="submit" value="submit">SUBMIT</button>
+                            </div>
+                            
+            
+                                <div class="form-container-right">
+                                    <!--Date and Time Section start-->
+                                <div class="date-time">
+                                    <div>
+                                        <label for="date">Date:</label><br>
+                                        <input type="date" id="date" name="date">&nbsp;&nbsp;
+                                    </div>
+                                    <div>
+                                        <label for="time">Time:</label><br>
+                                        <input type="time" id="time" name="time"><br><br>
+                                    </div>
+                                </div>
+                                <!--Date and Time Section end-->
+                                <div class="linput">
+                                    <label for="comments">Comments:</label><br>
+                                    <textarea name="comments" id="comments" cols="30" rows="10" placeholder="   Enter comments here.."></textarea>
+                                </div>
+                        </div>
+                    </form>
+                    </div>
+                    
+                    
+                    
+            </div>
+            
+            </div>
+    <!--Landing Page end-->
+</body>
+</html>
