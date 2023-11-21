@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <title>Register page</title>
+</head>
+<body>
+     <!--Landing Page start-->
+     <div class="landing-page">
+        <div class="login-page">
+            <div class="logo-container">
+                <div class="logo">
+                    <img src="{{ url_for('static', filename='images/website-logo2.png')}}" alt="">
+                </div>
+    
+                <div class="logo-statement">
+                    <h1>ZETDC LOAD SHEDDING INTERFACE</h1>
+                    <h1>ZETDC LOAD SHEDDING INTERFACE</h1>
+                </div>
+            </div>
+
+            <div class="login-form-container">
+                <div class="login-label">
+                    <i class="ri-survey-fill"></i>&nbsp;Register
+                </div>
+                <div class="login-form-inner-container">
+                    <form action="/submit" method="post">
+                        
+                        <div class="linput">
+                            <label for="ECnumber">EC Number:</label><br>
+                            <input type="text" name="ECnumber" placeholder="EC Number"><br>
+                        </div>
+                        
+                        <div class="linput">
+                            <label for="Name">Name:</label><br>
+                            <input type="text" name="name" placeholder="Name"><br>
+                        </div>
+
+                        <div class="linput">
+                            <label for="Surname">Surname:</label><br>
+                            <input type="text" name="Surname" placeholder="Surname"><br>
+                        </div>
+                        
+                        <div class="linput">
+                            <label for="Password">Password:</label><br>
+                            <input type="text" name="Password" placeholder="Password">
+                        </div>
+
+                        <div class="linput">
+                            <label for="ConfirmPassword">Confirm Password:</label><br>
+                            <input type="text" name="ConfirmPassword" placeholder="ConfirmPassword">
+                        </div>
+                    
+                        <button name="login">SUBMIT</button>
+                        <a href="{{url_for('success')}}">Success</a>
+                
+                    </form>
+                </div>
+            </div>
+        </div>    
+     </div>
+<!--Landing Page end-->
+</body>
+</html>

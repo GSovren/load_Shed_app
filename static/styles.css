@@ -143,7 +143,7 @@ i{
 
 
 
-/*App Form CSS*/
+/*Shed Form CSS*/
 .form-container{
     display: flex;
     justify-content: center;
@@ -194,6 +194,7 @@ i{
 }
 .form-container button{
     margin-left: 50px;
+    margin-top: 20px;
     width: 300px;
     color: var(--txt-color);
     background-color: var(--main--color);
@@ -210,7 +211,161 @@ i{
     background-color: var(--fg--color);
     transition: 0.5s;
 }
-/*App Form CSS*/
+.back{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 20px;
+    margin-right: 15px;
+}
+.back i{
+    font-size: 22px;
+    margin-right: 5px;
+    color: grey;
+    font-weight: 600;
+}
+.back a{
+    font-size: 18px;
+    color: grey;
+    font-weight: 600;
+}
+.back a:hover{
+    color: #5F9DF7;
+}
+.back i:hover{
+    color: #5F9DF7;
+}
+/*Shed Form CSS*/
+
+
+/*Restore Form CSS*/
+.restore-form-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    color: black;
+    background-color: var(--txt-color);
+    border-radius: 0px 0px 10px 10px;
+    width: 750px;
+}
+.restore-form-inner-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+.restore-form-container label{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
+.restore-form-container input{
+    padding: 15px;
+    border: none;
+    outline: none;
+    background-color:  #E6E6E6;
+    border-radius: 5px;  
+}
+.restore-form-container input:hover{
+    background-color: #D9FFF9;
+}
+.form-container .linput input{
+    width: 400px;
+    height: 45px;
+    padding: 15px;
+}
+.restore-form-container-right{
+    display: flex;
+    margin-left: 30px;
+}
+.restore-form-container .date-time{
+    display: flex;
+    justify-content: space-evenly;
+}
+.restore-form-container textarea{
+    border: none;
+    outline: none;
+    background-color:  #E6E6E6;
+}
+.restore-form-container textarea:hover{
+    background-color: #D9FFF9;
+}
+.restore-form-container button{
+    margin-left: 50px;
+    margin-top: 20px;
+    width: 300px;
+    color: var(--txt-color);
+    background-color: var(--main--color);
+    padding: 10px;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 7px;
+    outline: none;
+    border: none;
+}
+.restore-form-container button:hover{
+    background-color: var(--fg--color);
+    transition: 0.5s;
+}
+.back{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 20px;
+    margin-right: 15px;
+}
+.back i{
+    font-size: 22px;
+    margin-right: 5px;
+    color: grey;
+    font-weight: 600;
+}
+.back a{
+    font-size: 18px;
+    color: grey;
+    font-weight: 600;
+}
+.back a:hover{
+    color: #5F9DF7;
+}
+.back i:hover{
+    color: #5F9DF7;
+}
+/*Restore Form CSS*/
+
+
+/*landing*/
+.landing-options{
+    display: flex;
+    flex-direction: column;
+}
+
+.landing-options a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: none;
+    font-size: 40px;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: var(--main--color);
+    width: 500px;
+    border-radius: 15px;
+}
+
+.landing-options a:hover{
+    background-color: #5F9DF7;
+}
+
+.logout{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    font-style: none;
+    color: grey;
+    font-size: 20px;
+}
+/*landing*/
+
 
 
 @keyframes move-rtl {
